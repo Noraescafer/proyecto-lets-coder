@@ -176,6 +176,7 @@ li a {
     border-radius: 2em;
     font-size: 1em;
     padding: 1em;
+    cursor: pointer;
 }
 
 .item-lista-fechas-descripcion {
