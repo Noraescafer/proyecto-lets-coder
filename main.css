@@ -1,0 +1,217 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Esto es lo que viene siendo l págona entera*/
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecera {
+    display: flex;
+    flex-direction: row;
+}
+
+.fotologo {
+    height: 100px;
+    width: 100px;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgb(6, 39, 82);
+    flex-grow: 1;
+}
+
+.capa-logo {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .cabecera {
+        flex-direction: column;
+    }
+    .capa-logo {
+        justify-content: center;
+    }
+    .contenido {
+        padding: 1em !important;
+    }
+    .navbar {
+        display: none;
+    }
+    .navbar ul {
+        flex-direction: column;
+    }
+    .navbar ul li {
+        padding: 0.5em;
+    }
+    .piedepagina ul {
+        flex-direction: column;
+    }
+    .piedepagina ul li {
+        margin: 0.5em;
+    }
+}
+
+.navbar ul,
+.piedepagina ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0.25em;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.banner {
+    background-image: url(../imagenes/numeroschulos.jpg);
+    height: 10em;
+    width: 100%;
+    background-size: cover;
+}
+
+.imagen-banner {
+    width: 35%;
+    height: auto;
+    max-height: 10em;
+    max-width: auto;
+    margin-left: 20px;
+}
+
+.contenido {
+    background-color: rgb(129, 202, 236);
+    flex: 1;
+    padding: 5em;
+    overflow-y: scroll;
+}
+
+.lista-fechas {
+    padding: 0;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.item-lista-fechas:last-child {
+    border: 0px;
+}
+
+.item-lista-fechas {
+    border-style: solid;
+    border-color: rgb(6, 39, 82);
+    border-width: 2px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+.item-lista-fechas-fecha {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(6, 39, 82);
+}
+
+.item-lista-fechas-fecha-dia {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(6, 39, 82);
+}
+
+.item-lista-fechas-fecha-texto {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+}
+
+.nombre-curso {
+    font-weight: bold;
+    font-size: 1.25em;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalidad-curso {
+    font-style: italic;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-inscripcion {
+    background-color: rgb(6, 39, 82);
+    color: white;
+    border: 0;
+    border-radius: 2em;
+    font-size: 1em;
+    padding: 1em;
+}
+
+.item-lista-fechas-descripcion {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    text-align: center;
+}
+
+.item-lista-fechas-acciones {
+    display: flex;
+    flex: 3;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Esto es el pie de página*/
+
+footer {
+    display: flex;
+    background-color: rgb(6, 39, 82);
+}
+
+.piedepagina {
+    width: 100%;
+    display: flex;
+    padding: 0.4em;
+}
+
+.piedepagina ul li a {
+    display: flex;
+    align-items: center;
+}
+
+.piedepagina img {
+    width: 50px;
+    height: 50px;
+}
