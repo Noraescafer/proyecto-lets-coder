@@ -220,9 +220,10 @@ footer {
 }
 
 .tabla {
-    background-color: white;
-    border: 5px solid rgb(2, 43, 95);
-    text-align: center
+    background-color: rgb(61, 121, 199);
+    border: 5px solid;
+    border-radius: 20px;
+    text-align: center;
 }
 
 td,
@@ -230,4 +231,25 @@ th {
     width: 100px;
     border: 2px solid rgb(2, 43, 95);
     padding: 20px;
+    background-color: white;
+    border-radius: 0.5em;
+}
+
+thead {
+    font-size: 1.5rem;
+    color: white;
+}
+
+tbody {
+    border-radius: 1em;
+}
+
+th {
+    background-color: rgb(6, 39, 82);
+}
+
+.alumnos {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 15px;
 }
