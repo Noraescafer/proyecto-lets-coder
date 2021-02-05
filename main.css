@@ -93,6 +93,18 @@ li a {
     background-color: rgb(6, 39, 82);
 }
 
+.titulo-temario {
+    color: rgb(6, 39, 82);
+    padding-bottom: 90px;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 35%;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
 .contenido2 {
     display: flex;
     justify-content: center;
@@ -342,7 +354,7 @@ th {
     display: flex;
 }
 
-.hastaelchochodeestoya {
+.nuevo-intento {
     display: flex;
     flex-direction: column;
 }
