@@ -39,98 +39,112 @@
         <form class="formulario-inscripcion">
 
             <div class="fila-formulario">
-                <label class="label-formulario-inscripcion">Nombre:</label>
-                <input type="text">
+                <div class="fila-formulario-subseccion">
+                    <label class="label-formulario-inscripcion">Nombre</label>
+                    <input class="control-formulario" type="text">
+                </div>
 
-                <label class="label-formulario-inscripcion">Apellidos:</label>
-                <input type="text">
+                <div class="fila-formulario-subseccion">
+                    <label class="label-formulario-inscripcion">Apellidos</label>
+                    <input class="control-formulario" type="text">
+                </div>
 
-                <label class="label-formulario-inscripcion">Sexo:</label>
-                <select>
-                    <option value="M">Masculino</option>
-                    <option value="F">Femenino</option>
-                    <option value="O">Otro</option>
+                <div class="fila-formulario-subseccion">
+                    <label class="label-formulario-inscripcion">Sexo</label>
+                    <select class="control-formulario">
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                        <option value="O">Otro</option>
                     </select>
+                </div>
+
             </div>
 
 
 
             <div class="fila-formulario">
-                <label class="label-formulario-inscripcion">País:</label>
-                <input type="text">
+                <div class="fila-formulario-subseccion">
+                    <label class="label-formulario-inscripcion">País:</label>
+                    <input class="control-formulario" type="text">
+                </div>
 
-                <label class="label-formulario-inscripcion">Población:</label>
-                <input type="text">
+                <div class="fila-formulario-subseccion">
+                    <label class="label-formulario-inscripcion">Población:</label>
+                    <input class="control-formulario" type="text">
+                </div>
 
-                <label class="label-formulario-inscripcion">Código Postal</label>
-                <input type="text">
-            </div>
-
-
-
-
-
-
-            <div class="fila-formulario">
-                <h4>
-                    ¿Cuanto tiempo tienes?
-                </h4>
-                <input type="radio" id="pt" name="modalidad" value="pt">
-                <label for="pt">Part time</label><br>
-                <input type="radio" id="ft" name="modalidad" value="ft">
-                <label for="ft">Full time</label><br>
+                <div class="fila-formulario-subseccion">
+                    <label class="label-formulario-inscripcion">Código Postal</label>
+                    <input class="control-formulario" type="text">
+                </div>
             </div>
 
 
 
             <div class="fila-formulario">
-                <h4>
-                    ¿Cómo prefieres hacerlo?
-                </h4>
-                <input type="radio" id="o" name="modalidad" value="o">
-                <label for="pt">Online</label><br>
-                <input type="radio" id="p" name="modalidad" value="p">
-                <label for="ft">Presencial</label><br>
+                <div class="fila-formulario-subseccion">
+                    <label class="label-formulario-inscripcion" for="tiempo">
+                        ¿Cuanto tiempo tienes?
+                    </label>
+                    <input class="radio-control-formulario" type="radio" id="pt" name="tiempo" value="pt">
+                    <label class="texto-opcion-radio-button" for="pt">Part time</label><br>
+                    <input class="radio-control-formulario" type="radio" id="ft" name="tiempo" value="ft">
+                    <label class="texto-opcion-radio-button" for="ft">Full time</label><br>
+                </div>
             </div>
-
-
-
 
 
 
             <div class="fila-formulario">
-                <h4>¿Has programado algun vez?</h4>
-                <br>
-                <select>
-                   <option value="si">Si</option>
-                   <option value="no">No</option>
-                </select>
+                <div class="fila-formulario-subseccion">
+                    <label class="label-formulario-inscripcion" for="modalidad">
+                        ¿Como prefieres hacerlo?
+                    </label>
+                    <input class="radio-control-formulario" type="radio" id="o" name="modalidad" value="o">
+                    <label class="texto-opcion-radio-button" for="pt">Online</label><br>
+                    <input class="radio-control-formulario" type="radio" id="p" name="modalidad" value="p">
+                    <label class="texto-opcion-radio-button" for="ft">Presencial</label><br>
+                </div>
             </div>
-
-
-
 
 
 
             <div class="fila-formulario">
-                <h4>Si la respuesta es "Si". ¿Con qué has trabajado?</h4>
-                <input type="checkbox" id="HTML" name="HTML" value="HTML">
-                <label for="HTML">HTML</label>
-
-                <input type="checkbox" id="css" name="css" value="css">
-                <label for="css">CSS</label>
-
-                <input type="checkbox" id="JS" name="JS" value="JS">
-                <label for="JS">Javascript</label>
-
-                <input type="checkbox" id="GIT" name="GIT" value="GIT">
-                <label for="GIT">Git</label>
+                <div class="fila-formulario-subseccion">
+                    <label class="label-formulario-inscripcion" for="experiencia-programando">
+                        ¿Como prefieres hacerlo?
+                    </label>
+                    <select class="control-formulario" name="experiencia-programando">
+                       <option value="si">Si</option>
+                       <option value="no">No</option>
+                    </select>
+                </div>
             </div>
 
 
-            <input type="submit" value="Enviar">
 
+            <div class="fila-formulario">
+                <div class="fila-formulario-subseccion">
+                    <label class="label-formulario-inscripcion" for="tecnologias">
+                        Si la respuesta es "Si". ¿Con qué has trabajado?
+                    </label>
+                    <input class="checkbox-control-formulario" type="checkbox" id="HTML" name="HTML" value="HTML">
+                    <label class="label-formulario-inscripcion" for="HTML">HTML</label>
 
+                    <input class="checkbox-control-formulario" type="checkbox" id="css" name="css" value="css">
+                    <label class="label-formulario-inscripcion" for="css">CSS</label>
+
+                    <input class="checkbox-control-formulario" type="checkbox" id="JS" name="JS" value="JS">
+                    <label class="label-formulario-inscripcion" for="JS">Javascript</label>
+
+                    <input class="checkbox-control-formulario" type="checkbox" id="GIT" name="GIT" value="GIT">
+                    <label class="label-formulario-inscripcion" for="GIT">Git</label>
+                </div>
+            </div>
+
+            <div class="fila-formulario m-t-5">
+                <input class="boton-enviar" type="submit" value="Enviar">
+            </div>
 
         </form>
 
